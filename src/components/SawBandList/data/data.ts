@@ -1,0 +1,343 @@
+import imageA from "../../../assets/band-saw-blade-img/saw-blade-51-42.jpeg";
+import imageB from "../../../assets/band-saw-blade-img/saw-blade-51-42.jpeg";
+
+export interface ProgressBar {
+  label: string;
+  value: number;
+}
+
+export interface Product {
+  id: number;
+  title: string;
+  linha?: string;
+  caracteristics?: any[];
+  application: any[];
+  imageUrl: string;
+  description: string;
+  topics: string[];
+  tableData?: any[];
+  othersImage?: any[];
+  bimental?: any[];
+  material?: any[];
+  progressBars?:any[];
+}
+
+export const tableDataProduct1 = [
+  {
+    mm: "6 x 0,90",
+    dp3: "CW",
+    dp4: "CW",
+    dp6: "CW",
+    dp8: "N",
+    dp10: "N",
+    dp14: "N",
+    dpp: "0.75/1.25",
+    inches: "1/4 x 0.35",
+  },
+  {
+    mm: "10 x 0,90",
+    dp3: "CW",
+    dp4: "CW",
+    dp6: "N",
+    dp8: "N",
+    dp10: "N",
+    dp14: "N",
+    dpp: "1.4/2",
+    inches: "3/8 x 0.35",
+  },
+  {
+    mm: "10 x 0,65",
+    dp3: "CW",
+    dp4: "CW",
+    dp6: "N",
+    dp8: "",
+    dp10: "",
+    dp14: "",
+    dpp: "",
+    inches: "1/2 x 0.25",
+  },
+  {
+    mm: "13 x 0,65",
+    dp3: "CW",
+    dp4: "CW",
+    dp6: "N",
+    dp8: "",
+    dp10: "",
+    dp14: "",
+    dpp: "",
+    inches: "1/2 x 0.35",
+  },
+  {
+    mm: "13 x 0,90",
+    dp3: "CW",
+    dp4: "CW",
+    dp6: "N",
+    dp8: "",
+    dp10: "",
+    dp14: "",
+    dpp: "",
+    inches: "1/2 x 0.35",
+  },
+  {
+    mm: "20 x 0,90",
+    dp3: "",
+    dp4: "",
+    dp6: "",
+    dp8: "",
+    dp10: "",
+    dp14: "",
+    dpp: "",
+    inches: "3/4 x 0.35",
+  },
+  {
+    mm: "27 x 0,90",
+    dp3: "DCS",
+    dp4: "CS",
+    dp6: "",
+    dp8: "",
+    dp10: "",
+    dp14: "",
+    dpp: "",
+    inches: "",
+  },
+  {
+    mm: "34 x 1,10",
+    dp3: "",
+    dp4: "DCS",
+    dp6: "",
+    dp8: "",
+    dp10: "",
+    dp14: "",
+    dpp: "",
+    inches: "1 1/4 x 0.42",
+  },
+  {
+    mm: "41 x 1,30",
+    dp3: "",
+    dp4: "DCS",
+    dp6: "",
+    dp8: "",
+    dp10: "N/DCS",
+    dp14: "",
+    dpp: "",
+    inches: "1 1/2 x 0.50",
+  },
+  {
+    mm: "54 x 1,60",
+    dp3: "",
+    dp4: "DCS",
+    dp6: "",
+    dp8: "",
+    dp10: "N/DCS",
+    dp14: "",
+    dpp: "",
+    inches: "2 x 0.60",
+  },
+  {
+    mm: "67 x 1,60",
+    dp3: "",
+    dp4: "DCS",
+    dp6: "",
+    dp8: "",
+    dp10: "DCS",
+    dp14: "",
+    dpp: "",
+    inches: "2 5/8 x 0.63",
+  },
+  {
+    mm: "80 x 1,60",
+    dp3: "",
+    dp4: "DCS",
+    dp6: "",
+    dp8: "",
+    dp10: "DCS",
+    dp14: "",
+    dpp: "",
+    inches: "3 1/8 x 0.63",
+  },
+];
+
+export const tableDataProduct2 = [
+  {
+    inches: "1 x 0.35",
+    dp0_75_1_25: "",
+    dp1_1_3: "",
+    dp1_4_2: "",
+    dp2_3: "DCS",
+    dp3_4: "DCS",
+    dp4_6: "CS",
+    dp5_8: "CS",
+    mm: "27 x 0.90",
+  },
+  {
+    inches: "1 1/4 x 0.42",
+    dp0_75_1_25: "",
+    dp1_1_3: "",
+    dp1_4_2: "",
+    dp2_3: "DCS",
+    dp3_4: "DCS",
+    dp4_6: "CS",
+    dp5_8: "",
+    mm: "34 x 1.10",
+  },
+  {
+    inches: "1 1/2 x 0.50",
+    dp0_75_1_25: "",
+    dp1_1_3: "",
+    dp1_4_2: "",
+    dp2_3: "DCS",
+    dp3_4: "DCS",
+    dp4_6: "CS",
+    dp5_8: "",
+    mm: "41 x 1.30",
+  },
+  {
+    inches: "2 x 0.63",
+    dp0_75_1_25: "",
+    dp1_1_3: "CSP",
+    dp1_4_2: "DCS",
+    dp2_3: "DCS",
+    dp3_4: "",
+    dp4_6: "",
+    dp5_8: "",
+    mm: "54 x 1.60",
+  },
+  {
+    inches: "2 5/8 x 0.63",
+    dp0_75_1_25: "DCS",
+    dp1_1_3: "CSP",
+    dp1_4_2: "DCS",
+    dp2_3: "DCS",
+    dp3_4: "",
+    dp4_6: "",
+    dp5_8: "",
+    mm: "67 x 1.60",
+  },
+  {
+    inches: "3 1/8 x 0.63",
+    dp0_75_1_25: "DCS",
+    dp1_1_3: "CSP",
+    dp1_4_2: "DCS",
+    dp2_3: "",
+    dp3_4: "",
+    dp4_6: "",
+    dp5_8: "",
+    mm: "80 x 1.60",
+  },
+];
+
+export const products: Product[] = [
+  {
+    id: 1,
+    title: "SERRA FITA",
+    linha: "M42",
+    caracteristics: ["Serra de fita de alto desempenho", "Dentes resiste"],
+    progressBars:  [
+      { label: 'Produtividade', value: 35 },
+      { label: 'Resistência ao Desgaste', value: 65 },
+      { label: 'Resistência ao Choque', value: 65 },
+      { label: 'Vida da Lâmina', value: 65 }
+    ],
+    bimental: [
+      " Ampla gama de usos",
+      "      Adequado para corte de produção de todos os tipos de metais",
+      "      Dentes feitos de aço rápido com 8% de cobalto e 10% de molibdênio",
+    ],
+    material: [
+      "Alumínio",
+      " Aço para rolamento de esferas",
+      "  Latão",
+      " Aço endurecido",
+      "Aço para trabalho a frio",
+      " Cobre",
+      "Aço resistente à corrosão e a ácidos (austenítico)",
+      " Corrosões e aço resistente a ácidos (ferrítico)",
+      " Aço de estampagem profunda",
+      " Aço de corte livre",
+      "  Aço resistente ao calor",
+      "  Aço temperado de alta liga",
+      "  Aço de alta velocidade",
+      "     aço de nitretação",
+      " aço estrutural",
+      "   aço temperado",
+      " Aço ferramenta",
+    ],
+    application: [
+      "  Pacote de barra redonda",
+      "    Pacote, múltiplas camadas",
+      "    Pacote de tubos de paredes espessas",
+      "   Pacote, camada única",
+      "      Tubulação",
+      "   Perfis especiais",
+      "   Rodada do bar",
+      "  Barra quadrada",
+      " Barra plana",
+      "feixes",
+    ],
+
+    imageUrl: imageA,
+    description: "",
+    topics: [],
+    othersImage: [imageA, imageB],
+    tableData: tableDataProduct1,
+  },
+
+  {
+    id: 2,
+    title: "SERRA FITA",
+    linha: "M51",
+    caracteristics: [
+      " Borda de corte especial de liga micro-resistente",
+      "Ângulo de inclinação positivo",
+      "Capacidade de uso geral",
+    ],
+    progressBars:  [
+      { label: 'Produtividade', value: 50 },
+      { label: 'Resistência ao Desgaste', value: 80 },
+      { label: 'Resistência ao Choque', value: 80 },
+      { label: 'Vida da Lâmina', value: 80 }
+    ],
+    
+    bimental: [
+      "      Para os trabalhos de corte mais exigentes, também para cortes interrompidos",
+      "      Aresta de corte estável e microrresistente",
+      "      Particularmente resistente ao calor e à abrasão",
+      "      Vida útil da lâmina substancialmente melhorada",
+    ],
+    material: [
+      "    Alumínio",
+      "   Aço para rolamento de esferas",
+      "  Latão",
+      " Aço endurecido",
+      "     Aço para trabalho a frio",
+      " Cobre",
+      " Aço resistente à corrosão e a ácidos (austenítico)",
+      "  Corrosões e aço resistente a ácidos (ferrítico)",
+      "     Aço resistente ao calor",
+      "  Aço temperado de alta liga",
+      "      Aço de alta velocidade",
+      "     Ligas à base de níquel",
+      "  Aço de nitretação",
+      "  Aço temperado",
+      "   Ligas de titânio",
+      "  Aço ferramenta",
+    ],
+    application: [
+      "      Pacote de barra redonda",
+      "   Pacote de tubos de paredes espessas",
+      "  Lotes, camada única",
+      " Tubulação de paredes espessas",
+      "   Rodada do bar",
+      "  Barra quadrada",
+      "     Barra plana",
+      "  feixes",
+      "  Vigas de paredes espessas",
+    ],
+    imageUrl: imageA,
+    description: "Descrição do produto Pegasus",
+    topics: [],
+    othersImage: [imageA, imageB],
+
+    tableData: tableDataProduct2,
+  },
+];
