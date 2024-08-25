@@ -8,7 +8,7 @@ const Footer = () => {
   const socialLinks = [
     {
       name: "Instagram",
-      url: "https://www.instagram.com/",
+      url: "https://www.instagram.com/hiperionserras?igsh=MTN1bHduMnVzeGd6Zw==",
       icon: <InstagramIcon />,
     },
     {
@@ -46,6 +46,15 @@ const Footer = () => {
         >
           MOGI GUAÇU-SP
         </Link>,
+         <Link
+         href="https://www.google.com/maps/place/Hiperion+Serras/@-22.3599585,-46.9454274,15z/data=!4m6!3m5!1s0x65ff8045174de7df:0xabd5ebd017494fed!8m2!3d-22.3599585!4d-46.9454274!16s%2Fg%2F11l7401r46?entry=ttu"
+         target="_blank"
+         rel="noopener noreferrer"
+         color="#fff"
+         key="MOGI GUAÇU-SP"
+       >
+         CEP: 13847-005
+       </Link>,
       ],
     },
     {
@@ -54,6 +63,7 @@ const Footer = () => {
         "vendas@hiperionserras.com.br",
         "(19) 9.9740-2223",
         "(19)3831-5457",
+        
       ],
     },
     {

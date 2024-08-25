@@ -1,7 +1,7 @@
 import { Box, Typography, Breadcrumbs, Link as MuiLink } from "@mui/material";
 import { Link as RouterLink } from "react-router-dom";
 import SawProductsList from "src/components/SawProduct/SawProdutList/SawProductList";
-import ServiceImage from "../../assets/img/serra-hiperion.jpeg";
+import ServiceImage from "../../assets/img/background-top.jpg";
 
 const ProductDetailsPage = () => {
   return (
@@ -19,7 +19,7 @@ const ProductDetailsPage = () => {
         style={{
           backgroundImage: `url(${ServiceImage})`,
           backgroundSize: "cover",
-          backgroundPosition: "center",
+          backgroundPosition: "center  73%",
           height: "55vh",
           width: "100%",
           display: "flex",

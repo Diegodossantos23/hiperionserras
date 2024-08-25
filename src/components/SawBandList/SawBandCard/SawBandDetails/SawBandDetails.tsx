@@ -76,7 +76,7 @@ const SawBandDetails = () => {
             textShadow: "2px 2px 4px rgba(0,0,0,0.5)",
           }}
         >
-          Serras Circulares Cermet e Metal Duro
+          Lâminas de Serra fita
         </Typography>
         <Breadcrumbs aria-label="breadcrumb" sx={{ color: "#fff" }}>
           <MuiLink
@@ -276,6 +276,8 @@ const SawBandDetails = () => {
             <Typography variant="h6" gutterBottom>
               Descrição
             </Typography>
+
+            {product.id === 1 && product.tableData && (
             <Typography
               fontSize={{
                 xs: 13,
@@ -288,13 +290,32 @@ const SawBandDetails = () => {
               }}
               paragraph
             >
-              Grande variedade de usos, eficiente e durável - nosso duoflex® M42
-              é um verdadeiro polivalente adequado para a produção de corte de
-              todos os tipos de metal. Você pode usar essas lâminas de serra de
-              fita bimetálica de alto desempenho na produção, fabricação e
-              oficinas de usinagem. Elas apresentam robustez, resistência à
-              abrasão e longa vida útil da lâmina.
+           A serra fita M42 é destinada a cortes de materiais metálicos com espessuras finas e medianas, comumente encontrada em modelos de serra verticais, muito comuns em serralherias e em oficinas de pequeno ou médio porte.
+
             </Typography>
+            )}
+
+            {product.id === 2 && product.tableData && (
+            <Typography
+              fontSize={{
+                xs: 13,
+                md: 18,
+                lg: 18,
+                xl: 18,
+              }}
+              sx={{
+                color: "#747474",
+              }}
+              paragraph
+            >
+             A dureza de uma lâmina de serra de fita M51 possui 69 HRC
+            (Rockwell Hardness Scale). Essas lâminas são feitas de um aço
+            bimetálico com um dorso de aço liga e dentes de aço rápido M51,
+            que possuem alta dureza e resistência ao desgaste, sendo
+            adequadas para cortar materiais difíceis e de alta dureza.
+            </Typography>
+            )}
+
             {product.id === 1 && product.tableData && (
               <TableContainer
                 sx={{

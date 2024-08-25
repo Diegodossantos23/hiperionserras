@@ -324,6 +324,30 @@ const SawProductDetails = () => {
                 </ul>
               </>
             )}
+
+            {product.potencial && product.potencial.length > 1 && (
+              <>
+                <Divider sx={{ marginBottom: "1.5rem" }} component="div" />
+
+                <Typography fontSize={15} fontWeight="bold">
+                Potenciais Consumidores:
+                </Typography>
+
+                <ul>
+                  {product.potencial.map((type, index) => (
+                    <li
+                      style={{
+                        fontSize: "0.9rem",
+                      }}
+                      key={index}
+                    >
+                      {type}
+                    </li>
+                  ))}
+                </ul>
+              </>
+            )}
+
             {product.rows && product.rows.length > 0 && (
               <>
                 <Divider sx={{ marginBottom: "1.5rem" }} component="div" />
@@ -361,7 +385,8 @@ const SawProductDetails = () => {
                 </TableContainer>
               </>
             )}
-
+            
+            {product.potencial && product.potencial.length < 2 && (
             <Box
               sx={{
                 height: { xs: "auto", md: "auto" },
@@ -371,7 +396,7 @@ const SawProductDetails = () => {
                 background: "#424a55",
                 marginTop: "1rem",
               }}
-            >
+            >              
               <Typography
                 fontSize={13}
                 gutterBottom
@@ -382,17 +407,10 @@ const SawProductDetails = () => {
                   textShadow: "2px 2px 4px rgba(0,0,0,0.5)",
                 }}
               >
-                A Hiperion desenvolveu a liga de aço rápido M51, denominada
-                AGARDEN, exclusivamente no Brasil, para a produção de serras em
-                HSS. Esta liga possui um alto teor de Cobalto, Molibdênio e
-                cromo, combinado com um baixo teor de Tungstênio, conferindo
-                excelentes propriedades para o corte com serras, incluindo maior
-                tenacidade e resistência ao desgaste. Testes realizados em
-                empresas brasileiras demonstraram ganhos médios de rendimento
-                mínimo de 40%, com casos excepcionais alcançando mais de 8 vezes
-                o rendimento anterior, dependendo do material utilizado.
+            {product.potencial}
               </Typography>
             </Box>
+          )}
           </CardContent>
         </Box>
       </Box>

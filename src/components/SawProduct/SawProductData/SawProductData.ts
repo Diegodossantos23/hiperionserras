@@ -8,6 +8,11 @@ import ErosCermet285ImageB from "../../../../src/assets/circular-saws-img/eros-c
 import ErosCermet285ImageC from "../../../../src/assets/circular-saws-img/eros-cermet/with-bg/EROS CERMET - 285X.0X1.75X32X60T - DETALHE A.png";
 import ErosCermet285ImageD from "../../../../src/assets/circular-saws-img/eros-cermet/with-bg/EROS CERMET - 285X.0X1.75X32X60T - COM FUNDO B.png";
 
+import AresTCT344ImageA from "../../../../src/assets/circular-saws-img/ares-family/ares-tct-355x4/with-bg/ARES TCT - 355X4.0X3.2X80X72T - COM FUNDO B.png";
+import AresTCT344ImageB from "../../../../src/assets/circular-saws-img/ares-family/ares-tct-355x4/with-bg/ARES TCT - 355X4.0X3.2X80X72T - DETALHE A .png";
+import AresTCT344ImageC from "../../../../src/assets/circular-saws-img/ares-family/ares-tct-355x4/with-bg/ARES TCT - 355X4.0X3.2X80X72T - DETALHE B.png";
+import AresTCT344ImageD from "../../../../src/assets/circular-saws-img/ares-family/ares-tct-355x4/with-bg/ARES TCT - 355X4.0X3.2X80X72T - DETALHE C.png";
+
 
 import AresTCT550A from "src/assets/circular-saws-img/ares-family/ares-tct-550x3/without-bg/ARES TCT - 550X3.5X3.0X140X140T - SEM FUNDO .png"
 
@@ -17,6 +22,7 @@ export interface Product {
   linha?: string;
   caracteristics?: any[];
   application: any[];
+  potencial?: any[];
   relevant_types?: any[];
   eficience?: string;
   imageUrl: string;
@@ -38,7 +44,7 @@ export const products: Product[] = [
     title: "HSS",
     caracteristics: [
       "Serras de HSS",
-      " Aço rápido integral",
+      "Aço rápido integral",
       "Diâmetro: 150 a 630 mm",
     ],
     linha: "Linha AGARDEN",
@@ -52,8 +58,12 @@ export const products: Product[] = [
       "Vaporizada (Ferrosos ).",
       "Tin. (Nitreto de Titânio ) (Ferrosos ).",
       "Tin.Al. (Ni.+Ti + Al.) (Ferrosos ).",
-      "Revestimento Tin. Al + Cromo",
+      "A Serra HSS Hiperion AGARDEN tem um diferencial no revestimento que é o Tin.Al + Cromo, trazendo um resultados significativos no rendimento",
     ],
+    potencial: [
+      "A Hiperion Serras possui 3 tipos de modelos de serras circulares em HSS dentro da linha Agarden. Dentre elas, uma exclusividade no Brasil, desenvolvida em parceria com um laboratório e seu parceiro de fabricação, denominada como *Agarden DIVINESTEEL. A Hiperion Serras tem orgulho em ter desenvolvido uma das ligas de aço rápido mais potente do mundo. Essa liga tem um alto teor de cobalto, molibdênio e cromo, combinado com teor de tungstênio, resultando em excelentes propriedades de corte, incluindo maior tenacidade e resistência ao desgaste."
+    ],
+    rows: rowsTableData,
     imageUrl: AgardenHSS450ImageA,
     description: "Descrição do produto Centaurus",
     topics: ["Resistente", "Precisão"],
@@ -68,13 +78,10 @@ export const products: Product[] = [
     id: 2,
     title: "Metal Duro",
     caracteristics: [
-      "  Ideal para o corte de material seriado;",
-      "Alta resistência ao desgaste;",
-      "Cortes mais precisos, perpendiculares e com excelente acabamento;",
-      "Tempo reduzido de corte;",
-      "Garantia de maior produtividade industrial.",
-      "Cortes em série e alta produtividade.",
-      "Diâmetro: 250 a 460 mm.",
+      "Serra Circular de METAL DURO",
+      "Diâmetro: 150 a 1.200 mm.",
+      "Exemplos de Velocidade de corte: Alumínio: 3500 m./minuto e Aço: 110m./minuto.",
+
     ],
     linha: "Linha ARES",
     application: [
@@ -82,17 +89,37 @@ export const products: Product[] = [
       "Corte de Aço maciço",
       "Corte de Tubos de Aço",
       "Corte de Alumínio maciço e perfil",
+    ], potencial: [
+      "Conformadoras de tubos",
+      "Extrusoras e conformadores de Alumínio",
+      "Serralherias e Esquadrias de Alumínio",
+      "Auto Peças",
+      "Metalúrgicas",
+      "Forjarias"
     ],
     imageUrl:
     AresTCT550A,
     description: "Descrição do produto Pegasus",
     topics: ["Eficiente", "Durável"],
+    othersImage: [
+      AresTCT344ImageA,
+      AresTCT344ImageB,
+      AresTCT344ImageC,
+    ],
   },
   {
     id: 3,
     title: "Cermet",
     linha: "Linha EROS",
-    caracteristics: [],
+    caracteristics: [
+      "Ideal para o corte de material seriado;",
+      "Alta resistência ao desgaste;",
+      "Cortes mais precisos, perpendiculares e com excelente acabamento;",
+      "Tempo reduzido de corte;",
+      "Garantia de maior produtividade industrial.",
+      "Cortes em série e alta produtividade.",
+      "Diâmetro: 250 a 460 mm"
+    ],
     application: [
       " Para corte de Aços em geral",
       "Ideal para o corte de secções maciças em",
@@ -100,8 +127,11 @@ export const products: Product[] = [
     ],
     eficience:
       "Como não possui um custo muito elevado, a serra cermet se torna um produto muito  vantajoso, afinal, é construída com  materiais reforçados e robustos que  promovem uma maior proteção aos profissionais contra possíveis detritos durante os processos industriais.",
-    rows: rowsTableData,
-    imageUrl: ErosCermet285ImageA,
+      potencial: [
+        "Distribuidoras e revendas de Aço",
+        "Industrias com cortes seriados"
+      ],
+      imageUrl: ErosCermet285ImageA,
     description: "Descrição do produto Cermet",
     topics: ["Alta durabilidade", "Corte preciso"],
     othersImage: [

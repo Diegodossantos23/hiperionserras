@@ -112,7 +112,7 @@ const ContactForm: React.FC = () => {
                 paddingBottom={2}
                 sx={{ textShadow: "2px 2px 4px #fff" }}
               >
-                FAÇA UMA COTAÇÃO
+                FAÇA UM ORÇAMENTO
               </Typography>
 
               <Typography
@@ -125,7 +125,7 @@ const ContactForm: React.FC = () => {
                 paddingBottom={5}
                 sx={{ textShadow: "2px 2px 4px #fff" }}
               >
-                ENTRE EM CONTATO COM A GENTE PARA FAZER UMA COTAÇÃO!
+                ENTRE EM CONTATO CONOSCO PARA FAZER SEU ORÇAMENTO!
               </Typography>
 
               <Box sx={{ display: "flex", flexDirection: "column" }}>
@@ -256,6 +256,8 @@ const ContactForm: React.FC = () => {
               </Box>
             </form>
           </Grid>
+          {/*
+
           <Grid item xs={12} sm={12} md={6}>
             <Box
               sx={{
@@ -276,7 +278,8 @@ const ContactForm: React.FC = () => {
                 }}
               />
             </Box>
-          </Grid>
+          </Grid>*/
+          }
         </Grid>
         <Snackbar
           open={snackbarOpen}

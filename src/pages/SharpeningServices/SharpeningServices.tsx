@@ -8,7 +8,7 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 import { useNavigate, Link as RouterLink } from "react-router-dom";
-import ServiceImage from "../../assets/img/serra-hiperion.jpeg";
+import ServiceImage from "../../assets/img/background-top.jpg";
 import ContactForm from "src/components/ContactForm/ContactForm";
 import ImageURL from "./images/afiacao.jpeg";
 
@@ -79,7 +79,19 @@ const SharpeningServicesPage = () => {
           >
             Produtos
           </MuiLink>
-          <Typography color="#fff">Serviços de Afiação</Typography>
+          <MuiLink
+            component={RouterLink}
+            to="/produtos"
+            fontSize={{ xs: 11.5, md: 30, xl: 30 }}
+            sx={{
+              color: "#fff",
+              textDecoration: "none",
+              textShadow: "2px 2px 4px rgba(0,0,0,0.5)",
+              fontSize: { xs: "1rem" },
+            }}
+          >
+            Serviços de Afiação
+          </MuiLink>
         </Breadcrumbs>
       </div>
 
@@ -110,6 +122,9 @@ const SharpeningServicesPage = () => {
             sx={{
               background: "#F2BF27",
               color: "#000",
+              marginTop: "2rem",
+              marginLeft: "2rem",
+
               "&:hover": { background: "#F2BF27" },
             }}
             onClick={() => navigate("/")}
@@ -148,38 +163,27 @@ const SharpeningServicesPage = () => {
                 fontSize={{ xs: 11, md: 18, lg: 18, xl: 18 }}
                 gutterBottom
               >
-                Na Hiperion Serras, além de serras de alta qualidade, oferecemos
-                um serviço de afiação moderno e tecnológico. 💡
+                Além da comercialização de serras, a
+                Hiperion Serras possui um moderno e
+                tecnológico centro de afiações, garantindo
+                aos nossos clientes serviços de afiação de
+                serras com a mais alta qualidade,
+                performance e satisfação. Nosso centro
+                está equipado com maquinas CNC de
+                ultima geração, possibilitando obter a
+                mesma qualidade de afiação das serras
+                novas.
+                Disponibilizamos a todos nossos clientes
+                o sistema de retirada e entrega no local
+                para os seguintes serviços de afiação:
               </Typography>
-              <Typography
-                fontFamily="National 2 Condensed, Arial, sans-serif"
-                color="#72777d"
-                fontSize={{ xs: 11, md: 18, lg: 18, xl: 18 }}
-                gutterBottom
-              >
-                Nosso centro de afiação, equipado com máquinas CNC de última
-                geração, garante que suas serras tenham o mesmo desempenho de
-                quando eram novas.
-              </Typography>
-              <Typography
-                fontFamily="National 2 Condensed, Arial, sans-serif"
-                color="#72777d"
-                fontSize={{ xs: 11, md: 18, lg: 18, xl: 18 }}
-                gutterBottom
-              >
-                Com retirada e entrega no local, garantimos conveniência e
-                qualidade em cada afiação de serras circulares HSS e de metal
-                duro.
-              </Typography>
-              <Typography
-                fontFamily="National 2 Condensed, Arial, sans-serif"
-                color="#72777d"
-                fontSize={{ xs: 11, md: 18, lg: 18, xl: 18 }}
-                gutterBottom
-              >
-                Confie em nós para manter suas ferramentas sempre afiadas e
-                prontas para o trabalho! 🚀
-              </Typography>
+
+              <ul style={{
+                  color: "#72777d"
+              }}>
+                <li>Afiação de Serras Circulares HSS</li>
+                <li>Afiação de Serras Circulares de metal duro</li>
+              </ul>
             </Box>
           </Box>
           <Box

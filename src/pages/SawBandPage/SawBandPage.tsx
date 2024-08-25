@@ -1,7 +1,7 @@
 import { Link as RouterLink } from "react-router-dom";
 import { Box, Typography, Link as MuiLink, Breadcrumbs } from "@mui/material";
 
-import ServiceImage from "../../assets/img/serra-hiperion.jpeg";
+import ServiceImage from "../../assets/img/background-top.jpg";
 import SawBandList from "src/components/SawBandList/SawBandList";
 
 const SawBandPage = () => {
@@ -69,7 +69,19 @@ const SawBandPage = () => {
           >
             Produtos
           </MuiLink>
-          <Typography color="#fff">Serra Fita</Typography>
+          <MuiLink
+            component={RouterLink}
+            fontSize={{ xs: 11.5, md: 20, lg: 20, xl: 22 }}
+            to="/produtos"
+            style={{
+              color: "#fff",
+              textDecoration: "none",
+              textShadow: "2px 2px 4px rgba(0,0,0,0.5)",
+            }}
+          >
+            Serra Fita
+          </MuiLink>
+   
         </Breadcrumbs>
       </div>
       <SawBandList />
